@@ -1,0 +1,11 @@
+
+
+{
+  "name": "prashnaMala",
+
+  "displayName": "prashnaMala",
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-1579810093221435~3160444449",
+    "ios_app_id": "ca-app-pub-1579810093221435~3160444449"
+  }
+}

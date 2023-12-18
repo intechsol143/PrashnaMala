@@ -1,0 +1,194 @@
+
+import {
+  StyleSheet, Text, View,
+  Alert,
+  TextInput, TouchableOpacity
+} from 'react-native'
+import React, { useState } from 'react'
+
+const Index = () => {
+
+  const [userDetail, setUserDetail] = useState({
+    name: '',
+    errorName: '',
+    checkName: '',
+
+    password: '',
+    errorPassword: '',
+    checkPassword: '',
+
+    email: '',
+    errorEmail: '',
+    checkEmail: '',
+
+    mobile: '',
+    errorMobile: '',
+    checkMobile: '',
+  });
+
+
+
+  const checkSwitch = (param) => {
+    switch (param) {
+      case '1':
+        ONE();
+        break;
+
+      case '2':
+        TWO();
+        break;
+
+      case '3':
+        THREE();
+        break;
+
+      case '4':
+        FOUR();
+        break;
+
+      default:
+        Alert.alert("NUMBER NOT FOUND");
+
+    }
+
+  }
+
+
+  const ONE = () => {
+
+    Alert.alert("ONE");
+
+  }
+
+  const TWO = () => {
+
+    Alert.alert("TWO");
+
+  }
+
+  const THREE = () => {
+
+    Alert.alert("THREE");
+
+  }
+
+  const FOUR = () => {
+
+    Alert.alert("FOUR");
+
+  }
+  return (
+    <View style={styles.MainContainer}>
+      {/* name */}
+      <View style={styles.InputContainer}>
+        <Text style={styles.Labels}>Enter Your Name</Text>
+        <TextInput style={styles.InputStyle}
+          onChangeText={(txt) => {
+            setUserDetail({ ...userDetail, name: txt })
+            // validate(txt)
+          }
+          }
+          // onChangeText={SetUserDetail.name}
+          // onEndEditing={Validate}
+          autoCapitalize="none"
+          autoCorrect={true}
+          placeholder="Enter your name" />
+      </View>
+      {/* <View style={styles.InputContainer}>
+        <Text style={styles.Labels}>Enter Your Password</Text>
+        <TextInput style={styles.InputStyle}
+          onChangeText={(txt) => {
+            setUserDetail({ ...userDetail, password: txt })
+            validate(txt)
+          }}
+          // onChangeText={SetUserDetail.password}
+          // onEndEditing={Validate}
+          autoCapitalize="none"
+          autoCorrect={true}
+          placeholder="Enter your name" />
+      </View> */}
+      {/* <View style={styles.InputContainer}>
+        <Text style={styles.Labels}>Enter Your Email Address</Text>
+        <TextInput style={styles.InputStyle}
+          // onChangeText={SetUserDetail.email}
+          onChangeText={(txt) => setUserDetail({ ...userDetail, email: txt })}
+          // onEndEditing={Validate}
+          autoCapitalize="none"
+          autoCorrect={true}
+          placeholder="Enter your name" />
+      </View> */}
+  
+      <TouchableOpacity
+        style={styles.Signup}
+        onPress={() => {
+          checkSwitch(userDetail.name)
+          // validate();
+          // if (userDetail.name != '' && userDetail.email != '' && userDetail.Password != '') {
+          //   alert(
+          //     'Congratulation Your account has been created successfully!',
+          //     );
+          //     // }
+          //   } else {
+          //     validate();
+
+          //   }
+
+        }}>
+        <Text style={styles.SignupText}>SIGNUP</Text>
+      </TouchableOpacity>
+    </View>
+  )
+}
+
+export default Index
+
+const styles = StyleSheet.create({
+  MainContainer: {
+    flex: 1,
+    backgroundColor: 'lightgoldenrodyellow',
+  },
+  MainHeader: {
+    marginTop: 20,
+    fontWeight: 'bold',
+    fontSize: 40,
+    paddingLeft: 10,
+    color: 'purple',
+  },
+  welcome: {
+    marginTop: 20,
+    fontWeight: 'bold',
+    fontSize: 23,
+    paddingLeft: 8,
+    color: 'goldenrod',
+    alignSelf: 'center',
+  },
+  InputStyle: {
+    width: '85%',
+    height: 40,
+    borderWidth: 3,
+    borderColor: 'purple',
+    backgroundColor: 'seashell',
+  },
+  InputContainer: {
+    marginTop: 25,
+    marginLeft: 20,
+  },
+  Labels: {
+    fontWeight: 'bold',
+  },
+  Signup: {
+    width: '40%',
+    height: 50,
+    borderWidth: 3,
+    borderColor: 'white',
+    marginTop: 25,
+    marginLeft: 120,
+    backgroundColor: 'slategray',
+  },
+  SignupText: {
+    padding: 10,
+    fontWeight: 'bold',
+    fontSize: 20,
+    alignSelf: 'center',
+  },
+})

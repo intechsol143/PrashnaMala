@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "1033589534753",
+    "project_id": "prashnamala-efde4",
+    "storage_bucket": "prashnamala-efde4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1033589534753:android:c4e87491390a10fbcb7360",
+        "android_client_info": {
+          "package_name": "com.prashnamala"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1033589534753-ksqlqk6hcrk2ehjj6lsbj1rf0e21i0ev.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prashnamala",
+            "certificate_hash": "c93f37c8d673cd55d5cda2a7cfb365b5fc5cf833"
+          }
+        },
+        {
+          "client_id": "1033589534753-vnsa7ka3qt4ggufbmrdf5ftjbg2sf92r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prashnamala",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "1033589534753-sd8vgsopolhesrpevgfjfogsiu4lou4e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEDs2H6bgACTZXFtonFHw12dikimw0-u0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1033589534753-i03dvh7lell4cmeqkvil2ks5k299fvo8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1033589534753-1fkt00gjuiojtrjnuqdk08h2am9ma7t3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.intechsol.prashnaMala",
+                "app_store_id": "123456789"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
